@@ -1,0 +1,14 @@
+Running list of things to look out for:
+- Helpers don't always have exports. You can likely just find-replace all "async function" with "export async function" and then scan for all the non-async functions quickly.
+- We use the 'qawolf' package to get a browser/context/page, not the built in page that comes through Playwright fixtures
+- You might see weird scope issues (redeclaration of variables, functions having variables that don't come through arguments), as well as a "shared.X" object. 
+-- These are artifacts of an older generation of runners we had. They're mostly "out of style" and we fix them where we see them, but they don't cause failures on our runners.
+- The playwright configs are set to have a long timeout and use chrome. We highly recommend using these configs to have pairty - chromium has issues with video codex, for example.
+- There's an example of email infrastructure
+- You might see references to QA Wolf Automation endpoints - state machine, auth-bypass, stagger login and so on. 
+-- If you're using QAW, you can keep those in place (but might cause collisions), otherwise, you're likely not running things as in parallel as we do and you can gut those out.
+- Environment variables are extracted to a .env, but need to be kept in sync manually.
+- You can request a new export from the QAW team, but it's about as quick to just copy-paste code from the platform, where things are a lot more in-context after the initial export.
+- Don't forget to run npm install the first time you're in here - I deleted the node modules to make the zip lighter / faster.
+-- The package.json in the project will have all of our defaults, where-as the export should have a package.json with anything particular to your tests. 
+-- You should reconcile those two, bringing anything that isn't on the project's package.json in. Versions tend to matter less, most things (outside of Playwright itself) should be able to run on the latest

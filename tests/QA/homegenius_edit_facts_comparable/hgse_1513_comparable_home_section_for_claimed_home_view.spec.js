@@ -1,5 +1,7 @@
 const { test,expect, launch } = require("../../../lib/qawHelpers");
 const { logInHomegeniusUser, unclaimProperty, faker } = require("../../../lib/node_20_helpers");
+import { fakerEN } from '@faker-js/faker';
+//
 
 test("hgse_1513_comparable_home_section_for_claimed_home_view", async () => {
  // Step 1. HGSE-1513 - Comparable Home Section for Claimed Home View

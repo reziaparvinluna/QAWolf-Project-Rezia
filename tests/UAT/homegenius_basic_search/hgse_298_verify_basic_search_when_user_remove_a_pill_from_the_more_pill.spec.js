@@ -1,5 +1,4 @@
-const { test,expect, launch } = require("../../../lib/qawHelpers");
-const { logInHomegeniusUser } = require("../../../lib/node_20_helpers");
+import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
 
 test("hgse_298_verify_basic_search_when_user_remove_a_pill_from_the_more_pill", async () => {
  // Step 1. HGSE-298 - Verify Basic Search - When User Remove a Pill from the More Pill
@@ -229,8 +228,8 @@ test("hgse_298_verify_basic_search_when_user_remove_a_pill_from_the_more_pill", 
     await page.mouse.click(0,0)
   
     // Take a new unique base screenshot of the map, before we remove the pill
-    const screenshotBeforePillRemoved = `screenshotBeforePillremoved.png`
-    //await expect(page.locator(`#view-default-view`)).toHaveScreenshot(screenshotBeforePillRemoved)
+    const screenshotBeforePillRemoved = `screenshotBeforePillremoved${Date.now()}`
+    await expect(page.locator(`#view-default-view`)).toHaveScreenshot(screenshotBeforePillRemoved)
   
     // Click on a pill
     await page.locator(`button:has( + button:has-text("Close")) >> nth=1`).click()
@@ -246,12 +245,8 @@ test("hgse_298_verify_basic_search_when_user_remove_a_pill_from_the_more_pill", 
     await page.waitForTimeout(15000)
   
     // Assert that the count adjusts back to the count prior to adding the pill
-    try{expect(await page.locator(`p:has-text("Total Listings")`).innerText()).toBe(pillResults[i-1].count)
+    expect(await page.locator(`p:has-text("Total Listings")`).innerText()).toBe(pillResults[i-1].count)
   
-    }catch
-    {expect(await page.locator(`p:has-text("Total Listings")`).innerText()).toBe(pillResults[i-1].count-1)
-  }
-    
     // Pause for UI3
     await page.waitForTimeout(2000)
   

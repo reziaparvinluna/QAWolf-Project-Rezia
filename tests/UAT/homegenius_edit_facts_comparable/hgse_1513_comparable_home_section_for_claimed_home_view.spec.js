@@ -1,7 +1,4 @@
-const { test,expect, launch } = require("../../../lib/qawHelpers");
-const { logInHomegeniusUser, unclaimProperty, faker } = require("../../../lib/node_20_helpers");
-import { fakerEN } from '@faker-js/faker';
-//
+import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
 
 test("hgse_1513_comparable_home_section_for_claimed_home_view", async () => {
  // Step 1. HGSE-1513 - Comparable Home Section for Claimed Home View
@@ -54,13 +51,12 @@ test("hgse_1513_comparable_home_section_for_claimed_home_view", async () => {
   await page.locator(`button:text("Yes, add it to my profile")`).click(); 
   
   // Click "Next"
-  await page.locator(`button:has-text("Next")`).click(); 
+  await page.locator(`button:has-text("Next")`).click({ timeout: 75 * 1000 }); 
   
   // Assert that there are a maximum of 15 comparable homes in grid view
   expect(await page.locator(`button:has-text("Select home")`).count()).toBeLessThanOrEqual(15)
   
   // Click "List"
-  await page.locator(`span:has-text("List")`).waitFor({timeout: 120 * 1000})
   await page.locator(`span:has-text("List")`).click()
   
   // Assert that there are a maximum of 15 comparable homes in list view
@@ -68,7 +64,7 @@ test("hgse_1513_comparable_home_section_for_claimed_home_view", async () => {
   expect(await rowLocator.count()).toBeLessThanOrEqual(15)
   
   // Select a random number of homes [3-5] homes
-  const randomNumber = fakerEN.number({ min: 3, max: 5 });
+  const randomNumber = faker.datatype.number({ min: 3, max: 5 });
   const homes = []
   
   for(let i=0;i<randomNumber;i++) {

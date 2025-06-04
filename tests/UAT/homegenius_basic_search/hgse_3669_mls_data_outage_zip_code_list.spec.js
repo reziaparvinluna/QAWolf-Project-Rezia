@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_3669_mls_data_outage_zip_code_list", async () => {
  // Step 1. HGSE-3669 MLS Data Outage - Zip Code List

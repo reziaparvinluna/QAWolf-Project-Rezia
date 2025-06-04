@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_328_detailed_search_menu_styling_header_row_menu_filter_selected_from_drop_down", async () => {
  // Step 1. HGSE-328 - [Detailed Search Menu Styling) Header Row Menu-Filter selected from drop down

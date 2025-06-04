@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_874_upload_and_delete_all_photos_on_on_edit_property_details", async () => {
  // Step 1. HGSE-874 - Upload photos on on edit property details and close modal to assert photos still there

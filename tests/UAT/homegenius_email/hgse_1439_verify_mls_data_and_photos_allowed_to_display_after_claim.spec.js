@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_1439_verify_mls_data_and_photos_allowed_to_display_after_claim", async () => {
  // Step 1. HGSE-1439 - Verify MLS data displayed on claim home email. MLS data and photos allowed to display AFTER claim

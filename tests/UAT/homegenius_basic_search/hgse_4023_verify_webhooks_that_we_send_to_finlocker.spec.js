@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_4023_verify_webhooks_that_we_send_to_finlocker", async () => {
  // Step 1. HGSE-4023: Verify Webhooks that we send to Finlocker

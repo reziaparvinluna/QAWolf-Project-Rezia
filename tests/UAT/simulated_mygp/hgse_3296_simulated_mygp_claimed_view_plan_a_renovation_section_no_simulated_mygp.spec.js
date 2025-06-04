@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_3296_simulated_mygp_claimed_view_plan_a_renovation_section_no_simulated_mygp", async () => {
  // Step 1. HGSE-3296 Simulated mygp: Claimed View Plan a Renovation Section (no simulated mygp)

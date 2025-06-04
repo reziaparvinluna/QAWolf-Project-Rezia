@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_707_verify_cobrand_all_parts_of_header_subnav_feature_navs_re_design_on_co_branding_site", async () => {
  // Step 1. HGSE-707 - Verify Cobrand all parts of header, subnav, feature-navs re-design on Co-Branding site

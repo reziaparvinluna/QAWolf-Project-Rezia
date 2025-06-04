@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_409_property_details_listed_and_search_results_page_disclaimers_amp_footers", async () => {
  // Step 1. HGSE-409 - Property Details Listed and Search Results Page: Disclaimers &amp; Footers

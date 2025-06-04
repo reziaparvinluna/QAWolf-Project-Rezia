@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_1122_edit_facts_comparables_verify_hover_state_and_pin_state_on_list_grid_view_for_comparables", async () => {
  // Step 1. HGSE-1122 - [Edit Facts & Comparables] Verify Hover State and Pin State on Grid View for Comparables

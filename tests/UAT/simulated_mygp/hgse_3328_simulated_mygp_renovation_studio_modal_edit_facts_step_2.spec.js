@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_3328_simulated_mygp_renovation_studio_modal_edit_facts_step_2", async () => {
  // Step 1. HGSE-3328 Simulated mygp: Renovation Studio Modal Edit Facts (Step 2) HGSE-3328 Simulated mygp: Renovation Studio Modal Edit Facts (Step 2)

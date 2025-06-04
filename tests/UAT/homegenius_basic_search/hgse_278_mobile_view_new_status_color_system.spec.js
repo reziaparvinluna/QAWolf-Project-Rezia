@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius, devices} = require("../../../lib/node_20_helpers");
 
 test("hgse_278_mobile_view_new_status_color_system", async () => {
  // Step 1. HGSE-278 [Mobile View] New Status Color System iPhone 14

@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_3728_deleted_uploaded_images_shouldnt_display_after_clicking_calculate_button_for_first_attempt", async () => {
  // Step 1. HGSE-3728 Deleted uploaded Images shouldn't display after clicking Calculate button for first attempt

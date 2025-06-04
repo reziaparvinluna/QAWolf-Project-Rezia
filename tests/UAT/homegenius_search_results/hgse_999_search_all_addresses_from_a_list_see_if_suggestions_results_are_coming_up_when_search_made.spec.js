@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_999_search_all_addresses_from_a_list_see_if_suggestions_results_are_coming_up_when_search_made", async () => {
  // Step 1. HGSE-999 Search all addresses from a list & see suggestions/results are coming up when search made

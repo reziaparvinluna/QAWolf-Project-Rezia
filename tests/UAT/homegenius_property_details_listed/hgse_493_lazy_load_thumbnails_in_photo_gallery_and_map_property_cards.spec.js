@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_493_lazy_load_thumbnails_in_photo_gallery_and_map_property_cards", async () => {
  // Step 1. HGSE-493 Lazy Load Thumbnails in Photo Gallery and Map Property Cards - Chrome

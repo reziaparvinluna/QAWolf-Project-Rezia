@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_3087_embeddings_search_search_with_ai_describe_features_tab", async () => {
  // Step 1. HGSE-3087 [Embeddings Search] Search with AI - Describe Features Tab, before upload

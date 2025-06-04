@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_1309_verify_gp_value_is_matching_on_email_notifications_and_throughout_the_application", async () => {
  // Step 1. HGSE-1309 - Verify GP value is matching on email/notifications and throughout the application

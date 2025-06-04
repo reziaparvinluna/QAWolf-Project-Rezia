@@ -1,6 +1,6 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
-
-test("hgse_921_pressing_go_enter_in_search_bar_selects_top_recommendation", async () => {
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
+t("hgse_921_pressing_go_enter_in_search_bar_selects_top_recommendation", async () => {
  // Step 1. HGSE-921 Pressing go/enter in search bar selects top recommendation - Partial Address
   //--------------------------------
   // Arrange:

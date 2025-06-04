@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_3723_my_geniusprice_run_when_user_confirms_are_your_home_facts_up_to_date", async () => {
  // Step 1. HGSE-3723: MyGeniusprice run when user confirms "Are your home facts up to date?

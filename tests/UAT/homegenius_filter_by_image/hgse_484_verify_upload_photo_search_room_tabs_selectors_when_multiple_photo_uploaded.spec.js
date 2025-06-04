@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_484_verify_upload_photo_search_room_tabs_selectors_when_multiple_photo_uploaded", async () => {
  // Step 1. HGSE-484: [Verify Upload Photo Search] Room tabs/selectors when multiple photo uploaded

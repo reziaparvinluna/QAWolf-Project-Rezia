@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_3016_reset_button_on_search_with_ai_panel_and_desktop_and_tablet_design_for_advanced_filters", async () => {
  // Step 1. HGSE-3016 Reset button on Search with AI panel and Desktop Tablet for Advanced Filters

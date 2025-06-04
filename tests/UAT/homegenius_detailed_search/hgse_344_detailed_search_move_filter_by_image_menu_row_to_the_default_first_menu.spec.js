@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_344_detailed_search_move_filter_by_image_menu_row_to_the_default_first_menu", async () => {
  // Step 1. HGSE-344: [Detailed Search] Move 'Filter By Image' menu row to the default/first menu

@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_720_hide_secondary_address_recommendation_when_there_is_exact_match_found", async () => {
  // Step 1. HGSE-720 Hide secondary address recommendation when there is exact match found

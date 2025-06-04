@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_298_verify_basic_search_when_user_remove_a_pill_from_the_more_pill", async () => {
  // Step 1. HGSE-298 - Verify Basic Search - When User Remove a Pill from the More Pill

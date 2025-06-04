@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_1443_off_market_property_verify_claim_home_and_connect_with_agent_ads", async () => {
  // Step 1. HGSE-1443 - [Off Market Property] Verify Claim Home and Connect with Agent Ads

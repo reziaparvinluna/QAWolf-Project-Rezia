@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_1450_verify_mygeniusprice_increases_when_good_excellent_photo_uploaded", async () => {
  // Step 1. HGSE-1450: Verify mygeniusprice increases when good/excellent photo uploaded

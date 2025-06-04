@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_1183_consumer_wizard_buy_sell_a_property_option_non_branded_site", async () => {
  // Step 1. HGSE-1183 - (Consumer Wizard] Buy & Sell a Property Option (Non Branded Site)

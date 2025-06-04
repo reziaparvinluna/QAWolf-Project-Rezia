@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_1413_update_terms_and_conditions_in_emails_to_reference_new_web_page", async () => {
  // Step 1. HGSE-1413 - Update Terms and Conditions in Emails to Reference New Web Page

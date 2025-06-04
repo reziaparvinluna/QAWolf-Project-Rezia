@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_563_property_details_off_market_saved_homes_page_mapping_claimed_home_and_saved_home_data", async () => {
  // Step 1. HGSE-563 - [Property Details Off Market] Saved Homes Page-Mapping Claimed Home and Saved Home Data

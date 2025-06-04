@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_855_select_comparable_home_page_setup_for_mygeniusprice", async () => {
  // Step 1. HGSE-855 - Select Comparable Home Page Setup for mygeniusprice

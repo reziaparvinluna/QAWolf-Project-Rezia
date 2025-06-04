@@ -1,4 +1,5 @@
-import { assert, expect, test, getInbox, launch, dotenv, PNG, dateFns, faker, axios, fse, playwright } from '../../qawHelpers';
+const { test,expect, launch } = require("../../../lib/qawHelpers");
+const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
 
 test("hgse_964_verify_detailed_search_component_for_the_reset_and_done_apply_buttons", async () => {
  // Step 1. HGSE-964 [Verify Detailed Search] Component for the Reset and Done/Apply Buttons

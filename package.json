@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npx playwright test --headed",
     "test_specific_qa": "npx playwright test QA/homegenius_basic_search --headed",
-    "test_specific_uat": "npx playwright test UAT/homegenius_basic_search/hgse_256_platform_homepage_create_specific_header_quick_links.spec.js --headed",
+    "test_specific_uat": "npx playwright test UAT/homegenius_basic_search/hgse_287_verify_basic_search_with_full_address.spec.js --headed",
     "test_258": "npx playwright test QA/homegenius_basic_search/hgse_258_verify_basic_search_with_mls_id.spec.js --headed",
     "test_298": "npx playwright test QA/homegenius_basic_search/hgse_298_verify_basic_search_when_user_remove_a_pill_from_the_more_pill.spec.js --headed",
     "test_307": "npx playwright test QA/homegenius_basic_search/hgse_307_basic_search_auto_suggestion_when_2_letters_or_two_words_are_entered.spec.js --headed",

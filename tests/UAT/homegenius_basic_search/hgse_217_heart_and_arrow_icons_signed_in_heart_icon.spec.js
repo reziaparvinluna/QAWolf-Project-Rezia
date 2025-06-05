@@ -1,5 +1,5 @@
 import { assert, expect, test } from "@playwright/test";
-import {cleanUpSavedHomes,logInHomegeniusUser,createFlexibleAddressRegex,} from "../../../lib/node_20_helpers.js";
+import {cleanUpSavedHomes,logInHomegeniusUser, createFlexibleAddressRegex,} from "../../../lib/node_20_helpers.js";
 
 import dotenv from "dotenv";
 dotenv.config();

@@ -7,7 +7,7 @@
     "test": "npx playwright test --headed",
     "file": "node startup.js $npm_config_arg1",
     "test_specific_uat_hbs": "npx playwright test UAT/homegenius_basic_search --headed",
-    "test_specific_uat_es": "npx playwright test UAT/embedding_search --headed",
+    "test_specific_uat_es": "npx playwright test UAT/embedding_search/hgse_3087_embeddings_search_search_with_ai_describe_features_tab.spec.js --headed",
     "test_specific_uat_hch": "npx playwright test UAT/homegenius_claim_home/hgse_3740_insufficient_data_edge_cases.spec.js --headed",
     "test_865_uat": "npx playwright test UAT/homegenius_claim_home/hgse_865_claim_this_home_modal_claim_from_tri_dot.spec.js --headed",
     "test_866_uat": "npx playwright test UAT/homegenius_claim_home/hgse_866_claim_this_home_modal_claim_from_claim_button.spec.js --headed",

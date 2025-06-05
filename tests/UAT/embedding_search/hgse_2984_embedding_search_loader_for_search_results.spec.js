@@ -1,5 +1,5 @@
 const { test,expect, launch } = require("../../../lib/qawHelpers");
-const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
+const { logInHomegeniusUser, goToHomegenius, faker, random} = require("../../../lib/node_20_helpers");
 
 test("hgse_2984_embedding_search_loader_for_search_results", async () => {
  // Step 1. HGSE-2984 [Embedding Search] Loader for Search Results

@@ -1,5 +1,5 @@
 const { test,expect, launch } = require("../../../lib/qawHelpers");
-const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
+const { logInHomegeniusUser, goToHomegenius, faker} = require("../../../lib/node_20_helpers");
 
 test("hgse_3011_embedding_search_describe_features_room_type", async () => {
  // Step 1. 1. HGSE-3011 [Embedding Search] Describe Features - Room Type

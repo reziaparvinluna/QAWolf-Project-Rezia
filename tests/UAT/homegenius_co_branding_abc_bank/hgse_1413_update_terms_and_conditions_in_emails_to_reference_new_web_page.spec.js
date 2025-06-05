@@ -110,8 +110,4 @@ test("hgse_1413_update_terms_and_conditions_in_emails_to_reference_new_web_page"
   await page5.goto(urls[urls.length-5])
   await expect(page5).toHaveURL(/terms-and-conditions/)
   
-  
-  
-  
-  
 });

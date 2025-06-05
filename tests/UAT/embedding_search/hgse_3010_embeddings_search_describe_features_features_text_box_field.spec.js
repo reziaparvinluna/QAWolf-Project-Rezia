@@ -1,5 +1,5 @@
 const { test,expect, launch } = require("../../../lib/qawHelpers");
-const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
+const { logInHomegeniusUser, goToHomegenius, faker} = require("../../../lib/node_20_helpers");
 
 test("hgse_3010_embeddings_search_describe_features_features_text_box_field", async () => {
  // Step 1. HGSE-3010 [Embeddings Search] Describe Features - Features Text Box Field

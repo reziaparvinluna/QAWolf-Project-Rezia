@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test --headed",
+    "file": "node startup.js $npm_config_arg1",
     "test_specific_uat_hbs": "npx playwright test UAT/homegenius_basic_search --headed",
     "test_specific_uat_es": "npx playwright test UAT/embedding_search --headed",
     "test_specific_uat_hch": "npx playwright test UAT/homegenius_claim_home --headed",

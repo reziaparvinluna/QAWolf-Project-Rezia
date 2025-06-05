@@ -1,5 +1,5 @@
 const { test,expect, launch } = require("../../../lib/qawHelpers");
-const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
+const { logInHomegeniusUser, goToHomegenius, unclaimProperty} = require("../../../lib/node_20_helpers");
 
 test("hgse_865_claim_this_home_modal_claim_from_tri_dot", async () => {
  // Step 1. HGSE-865: Claim This Home Modal. Claim from Tri-dot

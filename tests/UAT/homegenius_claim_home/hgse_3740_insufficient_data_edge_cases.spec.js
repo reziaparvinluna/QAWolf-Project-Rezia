@@ -1,5 +1,5 @@
 const { test,expect, launch } = require("../../../lib/qawHelpers");
-const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
+const { logInHomegeniusUser, goToHomegenius, logInHomegeniusQAUser} = require("../../../lib/node_20_helpers");
 
 test("hgse_3740_insufficient_data_edge_cases", async () => {
  // Step 1. HGSE-3740: Insufficient Data Edge Cases - Desktop

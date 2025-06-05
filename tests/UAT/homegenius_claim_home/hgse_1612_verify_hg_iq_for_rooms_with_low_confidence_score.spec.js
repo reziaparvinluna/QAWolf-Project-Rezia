@@ -1,5 +1,5 @@
 const { test,expect, launch } = require("../../../lib/qawHelpers");
-const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
+const { logInHomegeniusUser, goToHomegenius, unclaimProperty} = require("../../../lib/node_20_helpers");
 
 test("hgse_1612_verify_hg_iq_for_rooms_with_low_confidence_score", async () => {
  // Step 1. HGSE-1612: Verify hgIQ for Rooms with Low Confidence Score

@@ -37,6 +37,8 @@ test("hgse_287_verify_basic_search_with_full_address", async () => {
   const searchString = `li${constructSearchString(searchAddress.addressLineOne)}:has-text("${searchAddress.addressLineTwo}")`
   
   // Click the first option that matches the address
+  // Add a 5 second timeout
+  await page.waitForTimeout(5000)
   await page.locator(searchString).click({delay:4000})
   
   //--------------------------------

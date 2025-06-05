@@ -1,5 +1,5 @@
 const { test,expect, launch } = require("../../../lib/qawHelpers");
-const { logInHomegeniusUser, goToHomegenius} = require("../../../lib/node_20_helpers");
+const { logInHomegeniusUser, goToHomegenius, claimProperty, dragAndDropFile} = require("../../../lib/node_20_helpers");
 
 test("hgse_1180_confirmation_modal_needed_for_claim_view", async () => {
  // Step 1. HGSE-1180 - Confirmation Modal Needed for Claim View

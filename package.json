@@ -20,6 +20,7 @@
     "test_278": "npx playwright test UAT/homegenius_basic_search/hgse_278_mobile_view_new_status_color_system.spec.js --headed",
     "test_287": "npx playwright test UAT/homegenius_basic_search/hgse_287_verify_basic_search_with_full_address.spec.js --headed",
     "test_298_uat": "npx playwright test UAT/homegenius_basic_search/hgse_298_verify_basic_search_when_user_remove_a_pill_from_the_more_pill.spec.js --headed",
+    "test_1357": "npx playwright test UAT/homegenius_basic_search/hgse_1357_migrate_terms_and_conditions_for_desktop.spec.js --headed",
     "test_specific_qa": "npx playwright test QA/homegenius_basic_search --headed",
     "test_258": "npx playwright test QA/homegenius_basic_search/hgse_258_verify_basic_search_with_mls_id.spec.js --headed",
     "test_298_qa": "npx playwright test QA/homegenius_basic_search/hgse_298_verify_basic_search_when_user_remove_a_pill_from_the_more_pill.spec.js --headed",

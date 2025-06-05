@@ -229,7 +229,7 @@ test("hgse_298_verify_basic_search_when_user_remove_a_pill_from_the_more_pill", 
     await page.mouse.click(0,0)
   
     // Take a new unique base screenshot of the map, before we remove the pill
-    const screenshotBeforePillRemoved = `screenshotBeforePillremoved.png`
+    // const screenshotBeforePillRemoved = `screenshotBeforePillremoved.png`
     //await expect(page.locator(`#view-default-view`)).toHaveScreenshot(screenshotBeforePillRemoved)
   
     // Click on a pill

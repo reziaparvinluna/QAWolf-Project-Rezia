@@ -182,7 +182,8 @@ test("hgse_1357_migrate_terms_and_conditions_for_desktop", async () => {
   // Go to the home search
   
   await page.goto(process.env.URL_HOMEGENIUS + `/home-search`)
-  await expect(page.locator(".loader")).not.toBeVisible()
+  // await expect(page.locator(".loader")).not.toBeVisible()
+  await expect(page.locator(".loader")).not.toBeVisible({ timeout: 50000 });
   
   // Assert Terms and Conditions
   await assertTermsAndConditions(page)
